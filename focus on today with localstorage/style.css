@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family:'popins';
+    border-color: rgb(189, 155, 155);
+    background-color: rgba(98, 159, 49, 0.07);
+    border: 3px solid;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+
+}
+@media (max-width:500px) {
+    main{
+        max-width:100%;
+        margin: 20px;
+        margin-bottom: 10px;
+    }
+    .container-h1 h1{
+        margin-bottom: 15px;
+        font-size: 2.0rem;
+        
+    }
+    .container{
+        margin: 0 auto;
+        width: 90%;
+
+    }
+
+}
+.container-h1{
+    padding: 10px;
+    
+}
+.heading span{
+    color: rgb(76, 199, 158);
+    margin-right: 10px;
+}
+
+.heading{
+    color: rgb(84, 38, 38);
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    margin-top:10px ;
+}
+.container{
+    border: 5px solid;
+    background-color: white;
+    border-radius: 15px;
+    max-width: 560px;
+    border-color: rgb(221, 32, 32);
+    margin-bottom: 10px;
+
+
+}
+.container-flex{
+    
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.container-flex img{
+    margin-left: 10px;
+}
+/* Container for the progress bar */
+.progress-bar {
+    height: 25px;
+    background-color: rgba(72, 163, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden; /* Ensures the transition effect is visible within the container */
+    position: relative; /* Allows for positioning of the progress value inside */
+}
+
+/* Progress value (the moving part of the progress bar) */
+.progress-value {
+    height: 25px;
+    width: 0%; /* Initially set to 0% */
+    background-color: #48A300;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s ease; /* Smooth transition for width changes */
+}
+
+/* Text inside the progress bar */
+.progress-value p {
+    font-weight: 500;
+    font-size: 10px;
+    color: #EEFFE0;
+    margin: 0;
+}
+
+.error-label{
+    display: none;
+    color: #FF515f;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.goal-container {
+    border: 2px solid rgba(194, 78, 78, 0.5);
+    border-radius: 17px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+ .Completed {
+    background-color:#48A300;
+    border-color:#48A300;
+
+}
+.hidden-img {
+    display: none;
+}
+.custom-container.Completed img {
+    display: block;
+}
+.custom-container.Completed + .goal-input {
+    text-decoration-line: line-through;
+    font-weight: 600;
+
+}
+
+.custom-container img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+ 
+.goal-input::placeholder{
+font-weight: 100;
+    filter: blur(1px);
+}
+.custom-container {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid rgba(97, 72, 28, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 20px;
+    text-shadow: 0 0 5px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 20px;
+    text-shadow: 0 0 5px;
+}
+
+
